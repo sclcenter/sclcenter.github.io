@@ -566,7 +566,7 @@
 
     <footer class="border-top footer text-muted bg-footer">
         <div class="container">
-            © 2023 - Spiritridge Chinese Language Center
+            © <span id="currentYear"></span> - Spiritridge Chinese Language Center
             <p>Spiritridge Chinese Language Center is a Non-profit organization (under IRS 501(c) section) promoting Chinese language learning for the young children.</p>
         </div>
     </footer>
@@ -574,7 +574,9 @@
     <script src="./EventHistory_files/jquery.min.js.download"></script>
     <script src="./EventHistory_files/bootstrap.bundle.min.js.download"></script>
     <script src="./EventHistory_files/site.js.download"></script>
-
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
     
 
 
